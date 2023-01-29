@@ -1,0 +1,85 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/Test.lua"))();
+local Window = Library.CreateLib("Gaming chair Premium V1.4", "DarkTheme")
+
+local notifications = loadstring(game:HttpGet(("https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua"),true))()
+notifications:notify{
+    Title = "Welcome",
+    Description = "you can get more information on the gaming chair Premium server",
+    Accept = {
+        Text = "Ok"
+    },
+    Length = 10
+}
+
+wait(0.8)
+
+
+local Tab1 = Window:NewTab("Home")
+local Section1 = Tab1:NewSection("Welcome To the Gaming Chair V1.4")
+
+local PlaceName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
+
+    Section1:NewButton("Player : "..game.Players.LocalPlayer.Name.." | "..game.Players.LocalPlayer.UserId, "?", function()
+    print("dont wory this not hack")
+    end)
+
+    Section1:NewButton("Game : "..game.PlaceId.." | "..PlaceName.Name, "?", function()
+    print("hi")
+    end)
+
+    Section1:NewButton("Account Age : "..game.Players.LocalPlayer.AccountAge.." | Premium :  you have Premium", "?", function()
+    print("hi")
+    end)
+    
+Section1:NewButton("Credit", "Oof", function()
+    game.StarterGui:SetCore("SendNotification", {
+    Title = "gaming char by";
+    Text = "Ammar#2789"; -- what the text says (ofc)
+    Duration = 30;
+})
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "gaming char Premium by";
+    Text = "Tihax#6374"; -- what the text says (ofc)
+    Duration = 30;
+})
+end)
+    
+Section1:NewButton("What new?", "click", function()
+    game.StarterGui:SetCore("SendNotification", {
+    Title = "What new? ";
+    Text = "Premium is now available"; -- what the text says (ofc)
+    Duration = 30;
+})
+end)
+
+local Tab2= Window:NewTab("special ones ")
+local Section2 = Tab2:NewSection("scritps by ammar")
+
+Section2:NewButton("Rb battles", "e", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/faPJup9S"))()
+end)
+Section2:NewButton("pls steal", "e", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AmmarScriot/Gaming-Chair-Beta/main/Pls%20Steal"))()
+end)
+Section2:NewButton("slap battles", "e", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Npjg53GW"))()
+end)
+Section2:NewButton("Speed hack", "e", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/V7kFA52Y"))()
+end)
+
+--button put on first coding
+
+local ScreenGui = Instance.new("ScreenGui")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+UITextSizeConstraint.Parent = F6
+UITextSizeConstraint.MaxTextSize = 30
+
+ 
